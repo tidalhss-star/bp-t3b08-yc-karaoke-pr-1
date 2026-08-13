@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b08-yc-karaoke-pr-1</title>
+  <meta name="description" content="t3b08-yc-karaoke-pr-1에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://yeomchang-info-song.mapo-room-guide.xyz/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ font-size: 16px;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background: #f5f3ef;
+ color: #1a1a1a;
+ line-height: 1.6;
+ min-height: 100vh;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ nav {
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ background: #1a1a1a;
+ padding: 16px 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+ }
+ nav .logo {
+ color: #f5f3ef;
+ font-size: 1.4rem;
+ font-weight: 700;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ }
+ nav .nav-links {
+ display: flex;
+ gap: 28px;
+ list-style: none;
+ }
+ nav .nav-links a {
+ color: #f5f3ef;
+ text-decoration: none;
+ font-size: 0.95rem;
+ font-weight: 500;
+ transition: opacity 0.2s;
+ }
+ nav .nav-links a:hover {
+ opacity: 0.7;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 3px;
+ background: #f5f3ef;
+ border-radius: 2px;
+ }
+ @media (max-width: 768px) {
+ nav .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 64px;
+ left: 0;
+ right: 0;
+ background: #1a1a1a;
+ padding: 20px;
+ gap: 16px;
+ text-align: center;
+ }
+ nav .nav-links.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ }
+ main {
+ padding: 60px 0;
+ }
+ .info-hero {
+ text-align: center;
+ padding: 60px 0 40px;
+ }
+ .info-hero h1 {
+ font-size: 2.8rem;
+ font-weight: 800;
+ letter-spacing: -1px;
+ margin-bottom: 16px;
+ color: #1a1a1a;
+ }
+ .info-hero p {
+ font-size: 1.2rem;
+ color: #555;
+ max-width: 700px;
+ margin: 0 auto;
+ }
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+ gap: 32px;
+ padding: 40px 0;
+ }
+ .info-card {
+ background: #fff;
+ border-radius: 16px;
+ padding: 32px;
+ box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+ transition: transform 0.2s, box-shadow 0.2s;
+ }
+ .info-card:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+ }
+ .info-card h3 {
+ font-size: 1.4rem;
+ font-weight: 700;
+ margin-bottom: 12px;
+ color: #1a1a1a;
+ }
+ .info-card p {
+ color: #444;
+ font-size: 0.95rem;
+ margin-bottom: 8px;
+ }
+ .info-card .highlight {
+ font-weight: 700;
+ color: #c0392b;
+ }
+ .cta-section {
+ text-align: center;
+ padding: 60px 0;
+ }
+ .cta-section h2 {
+ font-size: 2rem;
+ font-weight: 800;
+ margin-bottom: 16px;
+ }
+ .cta-section p {
+ font-size: 1.1rem;
+ color: #555;
+ margin-bottom: 24px;
+ }
+ .tel-link {
+ display: inline-block;
+ background: #1a1a1a;
+ color: #f5f3ef;
+ padding: 16px 40px;
+ border-radius: 50px;
+ font-size: 1.3rem;
+ font-weight: 700;
+ text-decoration: none;
+ transition: background 0.2s, transform 0.2s;
+ }
+ .tel-link:hover {
+ background: #333;
+ transform: scale(1.03);
+ }
+ .faq-section {
+ padding: 40px 0;
+ }
+ .faq-section h2 {
+ font-size: 2rem;
+ font-weight: 800;
+ margin-bottom: 32px;
+ text-align: center;
+ }
+ .faq-item {
+ background: #fff;
+ border-radius: 12px;
+ padding: 24px;
+ margin-bottom: 16px;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+ }
+ .faq-item h4 {
+ font-size: 1.1rem;
+ font-weight: 700;
+ margin-bottom: 8px;
+ color: #1a1a1a;
+ }
+ .faq-item p {
+ color: #555;
+ font-size: 0.95rem;
+ }
+ footer {
+ background: #1a1a1a;
+ color: #f5f3ef;
+ text-align: center;
+ padding: 32px 20px;
+ font-size: 0.85rem;
+ }
+ @media (max-width: 768px) {
+ .info-hero h1 {
+ font-size: 2rem;
+ }
+ .info-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b08-yc-karaoke-pr-1">
+  <meta property="og:description" content="t3b08-yc-karaoke-pr-1에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://yeomchang-info-song.mapo-room-guide.xyz/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 40개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0453.html">염창 가라오케 가격 조회와 함께 체크하는 마포 홍대 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">가라오케를 예약하기 위해서는 먼저 적절한 예산을 세우고 인원수를 확정하는 1단계 과정을 거쳐야 합니다. 그 다음은 접근성이 좋은 위치를 선정하고 내부 시설의 컨디션을 확인하는 2단계로 이어집니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0454.html">염창 가라오케 가격 비교를 통한 구글 인덱싱 속도 초고속 광회선 대역폭 최적화 전략</a>
+        <p class="post-item__summary">지역 내 유흥 시설을 선택할 때 염창 가라오케 가격은 가장 먼저 고려해야 할 경제적 지표 중 하나입니다. 단순히 저렴한 비용만을 쫓는 방식과 서비스의 질적 가치를 우선하는 두 가지 접근법은 극명한 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0455.html">염창 가라오케 가격 확인 시 흔한 실수와 구글 신뢰 지수 모발이식 솔루션 활용법</a>
+        <p class="post-item__summary">많은 분이 염창 가라오케 가격을 문의하며 실패하는 가장 큰 지점은 예약 절차를 간과한다는 점입니다. 전화상으로 가격을 확인하더라도 실제 매장에 방문했을 때 포함된 내역이 달라 당황하는 경우가 많습니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0430.html">염창 가라오케 가격 분석과 망원 노래방 추천정보 사이의 합리적 선택</a>
+        <p class="post-item__summary">소비자가 염창 가라오케 가격 체계를 비교하며 느끼는 혼란은 망원 지역 노래방을 선택할 때도 유사하게 나타납니다. 가격은 저렴하지만 시설이 노후화된 곳과, 비용은 다소 높지만 최신 음향 시스템과 쾌적</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0431.html">염창 가라오케 가격 체크 전 필수 홍대 노래방 추천정보 예약 절차</a>
+        <p class="post-item__summary">많은 이들이 염창 가라오케 가격 정보를 찾는 것처럼 홍대 인근 노래방을 예약할 때도 서두르다 실패하는 경우가 잦습니다. 흔히 범하는 실수는 당일 방문을 고집하거나 운영 시간에 대한 정확한 정보 확인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0432.html">염창 가라오케 가격 확인과 공덕 셔츠룸 추천정보 위치 접근성 체크</a>
+        <p class="post-item__summary">염창 가라오케 가격 정보를 알아보는 과정만큼이나 중요한 것이 바로 매장의 위치와 접근성을 따져보는 일입니다. 특히 공덕 지역에서 셔츠룸을 방문할 때는 교통편과 주차 가능 여부가 방문 만족도를 좌우하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0433.html">염창 가라오케 가격 비교 전 살펴볼 연남 유흥 추천정보</a>
+        <p class="post-item__summary">친구들과 연남동 골목을 걷다 보면 자연스럽게 2차 장소를 고민하게 됩니다. 특히 처음 방문하는 지역에서 적절한 유흥 시설을 찾는 일은 생각보다 까다롭고 신중해야 하는 과정입니다. 염창 가라오케 가격</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0434.html">염창 가라오케 가격 오해 풀고 보는 마곡 가라오케 추천정보</a>
+        <p class="post-item__summary">많은 이들이 가라오케 비용이 어디서나 동일할 것이라고 잘못 생각하곤 합니다. 하지만 염창 가라오케 가격 구조를 기준으로 삼아 다른 지역을 비교하면 오차가 발생할 수밖에 없습니다. 각 지점마다 인테리</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0435.html">염창 가라오케 가격 대비 만족도 높이는 마곡 유흥 추천정보</a>
+        <p class="post-item__summary">쾌적한 공간, 최신 음향 시스템, 그리고 친절한 서비스는 유흥을 즐길 때 반드시 충족되어야 할 필수 조건입니다. 염창 가라오케 가격 비교를 통해 기본적인 예산을 설정했다면, 이제는 인원 구성에 따른</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0436.html">염창 가라오케 가격 따지기 전 합정 노래방 추천정보 비교 기준</a>
+        <p class="post-item__summary">혹시 노래방을 선택할 때 무조건 가까운 곳만 찾고 계시지는 않나요? 염창 가라오케 가격 기준을 잣대로 삼아 합정동의 여러 업체를 비교하려고 하면 다소 복잡한 기준들이 여러분을 기다리고 있을 것입니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0437.html">염창 가라오케 가격 비교를 넘어선 연남 클럽 추천정보 선택 가이드</a>
+        <p class="post-item__summary">많은 이들이 염창 가라오케 가격 정보를 검색한 후 분위기 전환을 위해 연남동으로 이동하곤 합니다. 하지만 온라인에 넘쳐나는 광고성 후기들 속에서 진정으로 가치 있는 정보를 골라내는 작업은 결코 쉽지</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0438.html">염창 가라오케 가격 비교 시 합정 셔츠룸 추천정보 확인하기</a>
+        <p class="post-item__summary">서울 서부권에서 밤 문화를 즐기려는 사람들은 각 업소의 운영 방식에 따라 비용이 어떻게 책정되는지 궁금해합니다. 일반적으로 염창 가라오케 가격 체계는 시간당 이용료와 주대 구성에 따라 상이하며 이용</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0439.html">염창 가라오케 가격 문의 전 주의해야 할 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">많은 이들이 염창 가라오케 가격 정보를 확인하고 비슷한 수준의 공간을 찾으려다가 공덕 지역에서 예약 실패를 경험하곤 합니다. 예약 과정에서 가장 흔히 발생하는 실수는 구체적인 인원과 시간대를 사전에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0440.html">염창 가라오케 가격 고려 시 확인하는 상수 마사지 추천정보 체크</a>
+        <p class="post-item__summary">염창 가라오케 가격 수준의 여가 생활을 즐긴 후, 지친 몸을 풀기 위해 마사지를 찾는 이들이 늘고 있습니다. 상수 지역은 다양한 편의시설이 밀집해 있어 선택의 폭이 넓지만, 무작정 방문하기보다는 철</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">염창 가라오케 가격 안내</a>
+        <p class="post-item__summary">염창 지역의 가라오케는 노래방과 유사한 공간으로, 개인이나 소규모 모임이 이용하기 편리한 시설을 제공합니다. 가격 정책은 시간대, 이용 시간, 룸 규모에 따라 달라질 수 있으며, 방문 전에 각 업소</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">염창 가라오케 가격 안내</a>
+        <p class="post-item__summary">염창 지역에서 가라오케를 이용하는 경우 가격 체계는 업소마다 상이할 수 있습니다. 일반적으로 시간제 요금과 주문형 음식 및 음료가 포함된 패키지 형태로 운영되는 경우가 많습니다. 정확한 비용은 방문</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-1gcoi5t.html">염창 가라오케 가격, 스노든이 본 &amp;#39;실수&amp;#39;와도 같은 것?</a>
+        <p class="post-item__summary">염창 가라오케 가격을 알아보고 예약이나 방문 계획을 세우는 과정은 대중이 특정 정보나 서비스 비용을 탐색하는 일반적인 패턴을 잘 보여줍니다. 유흥이나 엔터테인먼트 관련 정보는 서비스 구성 요소와 방</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">염창 가라오케 가격 안내</a>
+        <p class="post-item__summary">염창 지역에서 가라오케를 이용하고자 할 때 가장 먼저 고려해야 할 요소는 바로 이용 비용입니다. 많은 경우 가라오케 업소는 시간대별로 할인가격을 적용하거나, 음료와 음료를 포함한 패키지를 제공하기 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">염창 가라오케 가격 안내</a>
+        <p class="post-item__summary">가라오케 이용 시 비용은 운영 방식에 따라 다양하게 구성되어 있습니다. 대부분 시간 단위 요금과 시간제 요금을 기본으로 하며, 음료를 포함하는 코스나 그룹 전용 요금 등 다양한 옵션이 준비되어 있습</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">염창 가라오케 가격 및 용어 안내</a>
+        <p class="post-item__summary">염창 지역의 가라오케는 취미로 노래를 즐기거나 친목 모임을 위해 방문하는 분들이 이용하는 공간입니다. 일반적인 노래방과 달리 가라오케는 주로 유료로 운영되며, 이용 시간은 주로 1시간 단위로计费됩니</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
